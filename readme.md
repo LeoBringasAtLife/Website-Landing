@@ -1,5 +1,10 @@
 # Landing Pages de Ventas: Plataforma Principal de Leonardo Bringas.
 
+Landing Pages de Ventas es la plataforma principal desarrollada por **Leonardo Bringas** para crear páginas de alta conversión enfocadas en servicios y negocios. El proyecto está estructurado con una arquitectura clara y escalable, separando contenido, estilos y funcionalidades para garantizar mantenimiento sencillo, rendimiento óptimo y crecimiento futuro.
+
+Ver sitio Web: [leobringasatlife.site](https://leobringasatlife.site)
+
+
 ```
 
 landing-ventas-main/
@@ -15,4 +20,4 @@ landing-ventas-main/
 ├── js/ # Para todos los archivos JavaScript.
 └── main.js # Archivo de lógica y funcionalidades.
 
-```
+```
