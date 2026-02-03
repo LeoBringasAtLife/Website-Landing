@@ -44,32 +44,70 @@
       content="https://leobringasatlife.site/og-image.jpg"
     />
     <link rel="canonical" href="https://leobringasatlife.site/" />
-    <link rel="icon" href="/assets/img/logo.ico" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="icon" href="/assets/image/favicon.ico" />
+    <link rel="apple-touch-icon" href="/assets/image/favicon.ico" sizes="180x180" />
     <link rel="manifest" href="/site.webmanifest" />
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/global.css" />
 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-      body {
-        font-family: 'Inter', sans-serif;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      /* Menú mobil */
-      #mobileMenu {
-        transition: transform 0.3s ease-in-out;
-      }
-
-      #mobileMenu.hidden {
-        transform: translateX(100%);
-      }
-    </style>
+    <!-- Datos estructurados JSON-LD para SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "LeoBringasAtLife - Desarrollo Web Profesional",
+      "description": "Desarrollo web profesional. Landing pages, sitios corporativos y e-commerce con diseño moderno y enfoque en conversión.",
+      "url": "https://leobringasatlife.site",
+      "logo": "https://leobringasatlife.site/assets/image/favicon.ico",
+      "image": "https://leobringasatlife.site/og-image.jpg",
+      "telephone": "+5491125417299",
+      "email": "leonardoisaiasbringas34@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Buenos Aires",
+        "addressCountry": "AR"
+      },
+      "sameAs": [
+        "https://instagram.com/leobringasatlife"
+      ],
+      "priceRange": "$$",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Argentina"
+      },
+      "serviceType": [
+        "Desarrollo Web",
+        "Landing Pages",
+        "Sitios Corporativos",
+        "E-commerce",
+        "Diseño Web"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Landing Page",
+          "description": "Página única optimizada para conversión",
+          "price": "320000",
+          "priceCurrency": "ARS"
+        },
+        {
+          "@type": "Offer",
+          "name": "Sitio Web Profesional",
+          "description": "3 a 5 páginas con diseño profesional",
+          "price": "950000",
+          "priceCurrency": "ARS"
+        },
+        {
+          "@type": "Offer",
+          "name": "E-commerce",
+          "description": "Tienda online completa",
+          "price": "2000000",
+          "priceCurrency": "ARS"
+        }
+      ]
+    }
+    </script>
   </head>
 
   <body class="bg-white text-gray-800 antialiased">
@@ -93,7 +131,7 @@
       <div
         class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4"
       >
-        <div class="text-xl font-bold group cursor-default">
+        <div class="text-xl font-bold group">
           LeoBringasAtLife
         </div>
 
@@ -233,12 +271,12 @@
       <section class="max-w-6xl mx-auto px-6 py-24 md:py-32">
         <div class="max-w-3xl">
           <h1
-            class="text-5xl md:text-6xl font-bold mb-6 leading-tight cursor-default"
+            class="text-5xl md:text-6xl font-bold mb-6 leading-tight"
           >
             Dale a tu negocio la presencia digital que merece
           </h1>
 
-          <p class="text-xl text-gray-600 mb-8 max-w-xl cursor-default">
+          <p class="text-xl text-gray-600 mb-8 max-w-xl">
             Sitios claros, rápidos y estratégicos, pensados para convertir
             visitas en consultas y ventas.
           </p>
@@ -246,13 +284,13 @@
           <div class="flex flex-wrap gap-4">
             <a
               href="#planes"
-              class="bg-gray-900 text-white px-6 py-3 rounded cursor-pointer"
+              class="bg-gray-900 text-white px-6 py-3 rounded"
             >
               Ver planes y precios
             </a>
             <a
               href="#contacto"
-              class="border border-gray-500 px-6 py-3 rounded text-black hover:bg-gray-900 hover:text-white hover:border-gray-900 transition cursor-pointer"
+              class="border border-gray-500 px-6 py-3 rounded text-black hover:bg-gray-900 hover:text-white hover:border-gray-900 transition"
             >
               Iniciar propuesta
             </a>
@@ -265,24 +303,24 @@
         <div class="max-w-6xl mx-auto px-6">
           <div class="grid md:grid-cols-3 gap-8">
             <div>
-              <div class="text-4xl font-bold text-gray-900 cursor-default">
+              <div class="text-4xl font-bold text-gray-900">
                 15-30 Días
               </div>
-              <p class="mt-2 text-sm text-black/60 cursor-default">
+              <p class="mt-2 text-sm text-black/60">
                 Días de entrega según alcance
               </p>
             </div>
 
             <div>
               <div class="text-4xl font-bold text-gray-900">50/50</div>
-              <p class="mt-2 text-sm text-black/60 cursor-default">
+              <p class="mt-2 text-sm text-black/60">
                 Inicio y cierre del proyecto
               </p>
             </div>
 
             <div>
               <div class="text-4xl font-bold text-gray-900">100%</div>
-              <p class="mt-2 text-sm text-black/60 cursor-default">
+              <p class="mt-2 text-sm text-black/60">
                 Responsive y SEO-ready
               </p>
             </div>
@@ -293,7 +331,7 @@
       <!-- PLANES -->
       <section id="planes" class="bg-gray-50 py-20">
         <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-3xl font-bold mb-5 cursor-default">
+          <h2 class="text-3xl font-bold mb-5">
             Todos los planes
           </h2>
 
@@ -307,37 +345,37 @@
               >
                 <div>
                   <h3
-                    class="text-2xl font-bold mb-2 flex items-center gap-2 cursor-default"
+                    class="text-2xl font-bold mb-2 flex items-center gap-2"
                   >
                     Landing Pages
                   </h3>
-                  <p class="text-gray-600 cursor-default">
+                  <p class="text-gray-600">
                     Optimizada para conversión
                   </p>
                 </div>
                 <div class="text-left">
                   <div class="text-3xl font-bold text-left">$320.000</div>
-                  <div class="text-sm text-gray-500 text-left cursor-default">
+                  <div class="text-sm text-gray-500 text-left">
                     Entrega: 15-20 días
                   </div>
                 </div>
               </div>
 
               <div
-                class="grid md:grid-cols-2 gap-4 text-sm text-gray-600 border-t pt-4 cursor-default"
+                class="grid md:grid-cols-2 gap-4 text-sm text-gray-600 border-t pt-4"
               >
-                <div class="cursor-default">- Copy orientado a conversión</div>
-                <div class="cursor-default">
+                <div>- Copy orientado a conversión</div>
+                <div>
                   - Formulario + CTA estratégicos
                 </div>
-                <div class="cursor-default">- SEO básico</div>
-                <div class="cursor-default">
+                <div>- SEO básico</div>
+                <div>
                   - Integración con redes sociales
                 </div>
-                <div class="cursor-default">- Sección Acerca de</div>
-                <div class="cursor-default">- Integración con Google Maps</div>
-                <div class="cursor-default">- Optimización de velocidad</div>
-                <div class="cursor-default">
+                <div>- Sección Acerca de</div>
+                <div>- Integración con Google Maps</div>
+                <div>- Optimización de velocidad</div>
+                <div>
                   - Soporte post-lanzamiento por 15 días
                 </div>
               </div>
@@ -345,26 +383,26 @@
 
             <!-- Plan 2 -->
             <div
-              class="bg-white border border-gray-200 rounded p-8 hover:border-gray-400 transition cursor-default"
+              class="bg-white border border-gray-200 rounded p-8 hover:border-gray-400 transition"
             >
               <div
-                class="flex flex-wrap items-start justify-between gap-4 mb-4 cursor-default"
+                class="flex flex-wrap items-start justify-between gap-4 mb-4"
               >
                 <div>
                   <h3
-                    class="text-2xl font-bold mb-2 flex items-center gap-2 cursor-default"
+                    class="text-2xl font-bold mb-2 flex items-center gap-2"
                   >
                     Blog Profesional
                   </h3>
-                  <p class="text-gray-600 cursor-default">
+                  <p class="text-gray-600">
                     Plataforma de contenido
                   </p>
                 </div>
-                <div class="text-left cursor-default">
-                  <div class="text-3xl font-bold text-left cursor-default">
+                <div class="text-left">
+                  <div class="text-3xl font-bold text-left">
                     $720.000
                   </div>
-                  <div class="text-sm text-gray-500 text-left cursor-default">
+                  <div class="text-sm text-gray-500 text-left">
                     Entrega: 20-30 días
                   </div>
                 </div>
@@ -499,77 +537,78 @@
       </section>
 
       <!-- TABLA COMPARATIVA DE PLANES -->
-      <section class="bg-white py-20 overflow-x-auto">
+      <section class="bg-white py-20">
         <div class="max-w-7xl mx-auto px-6">
-          <h2 class="text-3xl font-bold mb-4 cursor-default">
+          <h2 class="text-3xl font-bold mb-4">
             Compara todos los planes
           </h2>
-          <p class="text-gray-600 mb-8">
+          <p class="text-gray-600 mb-4">
             Elegí el plan que mejor se adapte a tus necesidades
           </p>
+          <p class="text-sm text-gray-500 mb-8 md:hidden">
+            Desliza horizontalmente para ver todos los planes →
+          </p>
 
-          <div class="overflow-x-auto">
-            <table class="w-full border-collapse min-w-[900px]">
+          <div class="overflow-x-auto -mx-6 px-6 md:mx-0 md:px-0">
+            <table class="w-full border-collapse min-w-[900px]" role="table" aria-label="Tabla comparativa de planes de desarrollo web">
               <thead>
                 <tr class="border-b-2 border-gray-200">
                   <th
                     class="text-left p-4 font-semibold text-gray-700 sticky left-0 bg-white z-10"
+                    scope="col"
                   >
                     Características
                   </th>
-                  <th class="text-center p-4 font-semibold">
+                  <th class="text-center p-4 font-semibold" scope="col">
                     <div
-                      class="text-sm text-gray-500 font-normal cursor-default"
+                      class="text-sm text-gray-500 font-normal"
                     >
                       Landing Page
                     </div>
-                    <div class="text-lg font-bold mt-1 cursor-default">
+                    <div class="text-lg font-bold mt-1">
                       $320.000
                     </div>
                   </th>
-                  <th class="text-center p-4 font-semibold">
+                  <th class="text-center p-4 font-semibold" scope="col">
                     <div
-                      class="text-sm text-gray-500 font-normal cursor-default"
+                      class="text-sm text-gray-500 font-normal"
                     >
                       Blog Profesional
                     </div>
-                    <div class="text-lg font-bold mt-1 cursor-default">
+                    <div class="text-lg font-bold mt-1">
                       $720.000
                     </div>
                   </th>
                   <th
                     class="text-center pt-3 pb-4 px-4 font-semibold bg-gray-50 border-2 border-gray-900 relative"
+                    scope="col"
                   >
-                    <span
-                      class="left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded cursor-default"
-                      >Recomendado</span
-                    >
                     <div
-                      class="text-sm text-gray-500 font-normal mt-2 cursor-default"
+                      class="text-sm text-gray-500 font-normal mt-2"
                     >
                       Sitio Web Profesional
                     </div>
-                    <div class="text-lg font-bold mt-1 cursor-default">
+                    <div class="text-lg font-bold mt-1">
                       $950.000
                     </div>
                   </th>
-                  <th class="text-center p-4 font-semibold">
+                  <th class="text-center p-4 font-semibold" scope="col">
                     <div
-                      class="text-sm text-gray-500 font-normal cursor-default"
+                      class="text-sm text-gray-500 font-normal"
                     >
                       Sitio Web Completo
                     </div>
-                    <div class="text-lg font-bold mt-1 cursor-default">
+                    <div class="text-lg font-bold mt-1">
                       $1.600.000
                     </div>
                   </th>
-                  <th class="text-center p-4 font-semibold">
+                  <th class="text-center p-4 font-semibold" scope="col">
                     <div
-                      class="text-sm text-gray-500 font-normal cursor-default"
+                      class="text-sm text-gray-500 font-normal"
                     >
                       E-commerce
                     </div>
-                    <div class="text-lg font-bold mt-1 cursor-default">
+                    <div class="text-lg font-bold mt-1">
                       $2.000.000
                     </div>
                   </th>
@@ -577,231 +616,231 @@
               </thead>
               <tbody>
                 <tr
-                  class="border-b border-gray-100 hover:bg-gray-50 cursor-default"
+                  class="border-b border-gray-100 hover:bg-gray-50"
                 >
-                  <td class="p-4 font-medium cursor-default">
+                  <th class="p-4 font-medium text-left" scope="row">
                     Tiempo de entrega
-                  </td>
-                  <td class="p-4 text-center text-gray-600 cursor-default">
+                  </th>
+                  <td class="p-4 text-center text-gray-600">
                     15-20 días
                   </td>
-                  <td class="p-4 text-center text-gray-600 cursor-default">
+                  <td class="p-4 text-center text-gray-600">
                     20-30 días
                   </td>
                   <td
-                    class="p-4 text-center text-gray-600 cursor-default bg-gray-50 cursor-default"
+                    class="p-4 text-center text-gray-600 bg-gray-50"
                   >
                     20-30 días
                   </td>
-                  <td class="p-4 text-center text-gray-600 cursor-default">
+                  <td class="p-4 text-center text-gray-600">
                     30-45 días
                   </td>
-                  <td class="p-4 text-center text-gray-600 cursor-default">
+                  <td class="p-4 text-center text-gray-600">
                     45-60 días
                   </td>
                 </tr>
                 <tr
-                  class="border-b border-gray-100 hover:bg-gray-50 cursor-default"
+                  class="border-b border-gray-100 hover:bg-gray-50"
                 >
-                  <td class="p-4 font-medium cursor-default">
+                  <th class="p-4 font-medium text-left" scope="row">
                     Número de páginas
-                  </td>
-                  <td class="p-4 text-center text-gray-600 cursor-default">
+                  </th>
+                  <td class="p-4 text-center text-gray-600">
                     1 página
                   </td>
-                  <td class="p-4 text-center text-gray-600 cursor-default">
+                  <td class="p-4 text-center text-gray-600">
                     Blog + páginas base
                   </td>
                   <td
-                    class="p-4 text-center text-gray-600 bg-gray-50 cursor-default"
+                    class="p-4 text-center text-gray-600 bg-gray-50"
                   >
                     3-5 páginas
                   </td>
-                  <td class="p-4 text-center text-gray-600 cursor-default">
+                  <td class="p-4 text-center text-gray-600">
                     5-7 páginas
                   </td>
-                  <td class="p-4 text-center text-gray-600 cursor-default">
+                  <td class="p-4 text-center text-gray-600">
                     Multi-página
                   </td>
                 </tr>
                 <tr
-                  class="border-b border-gray-100 hover:bg-gray-50 cursor-default"
+                  class="border-b border-gray-100 hover:bg-gray-50"
                 >
-                  <td class="p-4 font-medium cursor-default">
+                  <th class="p-4 font-medium text-left" scope="row">
                     Diseño Responsive
-                  </td>
-                  <td class="p-4 text-center cursor-default">
-                    <span class="text-green-600 font-bold cursor-default"
+                  </th>
+                  <td class="p-4 text-center">
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
-                  <td class="p-4 text-center cursor-default">
-                    <span class="text-green-600 font-bold cursor-default"
+                  <td class="p-4 text-center">
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
                   <td class="p-4 text-center bg-gray-50">
-                    <span class="text-green-600 font-bold cursor-default"
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
                   <td class="p-4 text-center">
-                    <span class="text-green-600 font-bold cursor-default"
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
                   <td class="p-4 text-center">
-                    <span class="text-green-600 font-bold cursor-default"
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
                 </tr>
                 <tr
-                  class="border-b border-gray-100 hover:bg-gray-50 cursor-default"
+                  class="border-b border-gray-100 hover:bg-gray-50"
                 >
-                  <td class="p-4 font-medium cursor-default">SEO</td>
-                  <td class="p-4 text-center text-gray-600 cursor-default">
+                  <th class="p-4 font-medium text-left" scope="row">SEO</th>
+                  <td class="p-4 text-center text-gray-600">
                     Básico
                   </td>
-                  <td class="p-4 text-center text-gray-600 cursor-default">
+                  <td class="p-4 text-center text-gray-600">
                     Optimizado
                   </td>
                   <td
-                    class="p-4 text-center text-gray-600 bg-gray-50 cursor-default"
+                    class="p-4 text-center text-gray-600 bg-gray-50"
                   >
                     On-page
                   </td>
-                  <td class="p-4 text-center text-gray-600 cursor-default">
+                  <td class="p-4 text-center text-gray-600">
                     Avanzado
                   </td>
-                  <td class="p-4 text-center text-gray-600 cursor-default">
+                  <td class="p-4 text-center text-gray-600">
                     Para productos
                   </td>
                 </tr>
                 <tr
-                  class="border-b border-gray-100 hover:bg-gray-50 cursor-default"
+                  class="border-b border-gray-100 hover:bg-gray-50"
                 >
-                  <td class="p-4 font-medium cursor-default">
+                  <th class="p-4 font-medium text-left" scope="row">
                     Google Analytics
+                  </th>
+                  <td class="p-4 text-center">
+                    <span class="text-gray-400">—</span>
                   </td>
                   <td class="p-4 text-center">
-                    <span class="text-gray-400 cursor-default">—</span>
-                  </td>
-                  <td class="p-4 text-center cursor-default">
-                    <span class="text-green-600 font-bold cursor-default"
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
-                  <td class="p-4 text-center bg-gray-50 cursor-default">
-                    <span class="text-green-600 font-bold cursor-default"
-                      >✓</span
-                    >
-                  </td>
-                  <td class="p-4 text-center">
-                    <span class="text-green-600 font-bold cursor-default"
+                  <td class="p-4 text-center bg-gray-50">
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
                   <td class="p-4 text-center">
-                    <span class="text-green-600 font-bold cursor-default"
+                    <span class="text-green-600 font-bold"
+                      >✓</span
+                    >
+                  </td>
+                  <td class="p-4 text-center">
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
                 </tr>
                 <tr
-                  class="border-b border-gray-100 hover:bg-gray-50 cursor-default"
+                  class="border-b border-gray-100 hover:bg-gray-50"
                 >
-                  <td class="p-4 font-medium cursor-default">
+                  <th class="p-4 font-medium text-left" scope="row">
                     Formularios de contacto
-                  </td>
-                  <td class="p-4 text-center cursor-default">
-                    <span class="text-green-600 font-bold cursor-default"
+                  </th>
+                  <td class="p-4 text-center">
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
                   <td class="p-4 text-center">
-                    <span class="text-green-600 font-bold cursor-default"
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
                   <td class="p-4 text-center bg-gray-50">
-                    <span class="text-green-600 font-bold cursor-default"
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
-                  <td class="p-4 text-center text-gray-600 cursor-default">
+                  <td class="p-4 text-center text-gray-600">
                     Avanzados
                   </td>
                   <td class="p-4 text-center">
-                    <span class="text-green-600 font-bold cursor-default"
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
                 </tr>
                 <tr class="border-b border-gray-100 hover:bg-gray-50">
-                  <td class="p-4 font-medium cursor-default">
+                  <th class="p-4 font-medium text-left" scope="row">
                     Integración redes sociales
-                  </td>
+                  </th>
                   <td class="p-4 text-center">
-                    <span class="text-green-600 font-bold cursor-default"
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
-                  <td class="p-4 text-center text-gray-600 cursor-default">
+                  <td class="p-4 text-center text-gray-600">
                     Compartición
                   </td>
                   <td class="p-4 text-center bg-gray-50">
-                    <span class="text-green-600 font-bold cursor-default"
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
                   <td class="p-4 text-center">
-                    <span class="text-green-600 font-bold cursor-default"
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
                   <td class="p-4 text-center">
-                    <span class="text-green-600 font-bold cursor-default"
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
                 </tr>
                 <tr class="border-b border-gray-100 hover:bg-gray-50">
-                  <td class="p-4 font-medium cursor-default">
+                  <th class="p-4 font-medium text-left" scope="row">
                     Optimización de velocidad
-                  </td>
+                  </th>
                   <td class="p-4 text-center">
-                    <span class="text-green-600 font-bold cursor-default"
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
-                  <td class="p-4 text-center text-gray-600 cursor-default">
+                  <td class="p-4 text-center text-gray-600">
                     Mejorada
                   </td>
                   <td class="p-4 text-center bg-gray-50">
-                    <span class="text-green-600 font-bold cursor-default"
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
                   <td class="p-4 text-center">
-                    <span class="text-green-600 font-bold cursor-default"
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
                   <td class="p-4 text-center">
-                    <span class="text-green-600 font-bold cursor-default"
+                    <span class="text-green-600 font-bold"
                       >✓</span
                     >
                   </td>
                 </tr>
                 <tr class="border-b border-gray-100 hover:bg-gray-50">
-                  <td class="p-4 font-medium cursor-default">
+                  <th class="p-4 font-medium text-left" scope="row">
                     Blog / Contenido
-                  </td>
+                  </th>
                   <td class="p-4 text-center">
                     <span class="text-gray-400">—</span>
                   </td>
-                  <td class="p-4 text-center text-gray-600 cursor-default">
+                  <td class="p-4 text-center text-gray-600">
                     Completo
                   </td>
                   <td class="p-4 text-center bg-gray-50">
@@ -815,7 +854,7 @@
                   </td>
                 </tr>
                 <tr class="border-b border-gray-100 hover:bg-gray-50">
-                  <td class="p-4 font-medium">E-commerce (Productos/Pagos)</td>
+                  <th class="p-4 font-medium text-left" scope="row">E-commerce (Productos/Pagos)</th>
                   <td class="p-4 text-center">
                     <span class="text-gray-400">—</span>
                   </td>
@@ -828,14 +867,14 @@
                   <td class="p-4 text-center">
                     <span class="text-gray-400">—</span>
                   </td>
-                  <td class="p-4 text-center text-gray-600 cursor-default">
+                  <td class="p-4 text-center text-gray-600">
                     Hasta 100 productos
                   </td>
                 </tr>
                 <tr
-                  class="border-b border-gray-100 hover:bg-gray-50 cursor-default"
+                  class="border-b border-gray-100 hover:bg-gray-50"
                 >
-                  <td class="p-4 font-medium">Soporte post-lanzamiento</td>
+                  <th class="p-4 font-medium text-left" scope="row">Soporte post-lanzamiento</th>
                   <td class="p-4 text-center text-gray-600">15 días</td>
                   <td class="p-4 text-center text-gray-600">15 días</td>
                   <td class="p-4 text-center bg-gray-50 text-gray-600">
@@ -895,7 +934,7 @@
 
       <!-- SERVICIOS OPCIONALES -->
       <section id="servicios-adicionales" class="max-w-6xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-bold mb-4 cursor-default">
+        <h2 class="text-3xl font-bold mb-4">
           Servicios opcionales
         </h2>
         <p class="text-gray-600 mb-12 max-w-2xl">
@@ -999,16 +1038,15 @@
       <!-- PROCESO -->
       <section id="proceso" class="bg-gray-50 py-20">
         <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-3xl font-bold mb-12 cursor-default">
+          <h2 class="text-3xl font-bold mb-12">
             Proceso de trabajo
           </h2>
 
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Paso 1 -->
-            <div class="cursor-pointer">
-              <!-- Hacer hover de un color rojo-700 en el numero [1] -->
+            <div>
               <div
-                class="hover:bg-gray-700 hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4"
+                class="hover:bg-gray-700 hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4 transition-colors"
               >
                 1
               </div>
@@ -1019,9 +1057,9 @@
             </div>
 
             <!-- Paso 2 -->
-            <div class="group cursor-pointer">
+            <div class="group">
               <div
-                class="hover:bg-gray-700 hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4"
+                class="hover:bg-gray-700 hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4 transition-colors"
               >
                 2
               </div>
@@ -1033,9 +1071,9 @@
             </div>
 
             <!-- Paso 3 -->
-            <div class="group cursor-pointer">
+            <div class="group">
               <div
-                class="hover:bg-gray-700 hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4"
+                class="hover:bg-gray-700 hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4 transition-colors"
               >
                 3
               </div>
@@ -1049,9 +1087,9 @@
             </div>
 
             <!-- Paso 4 -->
-            <div class="group cursor-pointer">
+            <div class="group">
               <div
-                class="hover:bg-gray-700 hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4"
+                class="hover:bg-gray-700 hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4 transition-colors"
               >
                 4
               </div>
@@ -1062,9 +1100,9 @@
             </div>
 
             <!-- Paso 5 -->
-            <div class="group cursor-pointer">
+            <div class="group">
               <div
-                class="hover:bg-gray-700 hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4"
+                class="hover:bg-gray-700 hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4 transition-colors"
               >
                 5
               </div>
@@ -1076,9 +1114,9 @@
             </div>
 
             <!-- Paso 6 -->
-            <div class="group cursor-pointer">
+            <div class="group">
               <div
-                class="hover:bg-gray-700 hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4"
+                class="hover:bg-gray-700 hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4 transition-colors"
               >
                 6
               </div>
@@ -1089,9 +1127,9 @@
             </div>
 
             <!-- Paso 7 -->
-            <div class="group cursor-pointer">
+            <div class="group">
               <div
-                class="hover:bg-gray-700 hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4"
+                class="hover:bg-gray-700 hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4 transition-colors"
               >
                 7
               </div>
@@ -1102,9 +1140,9 @@
             </div>
 
             <!-- Paso 8 -->
-            <div class="group cursor-pointer">
+            <div class="group">
               <div
-                class="hover:bg-gray-700 hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4"
+                class="hover:bg-gray-700 hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4 transition-colors"
               >
                 8
               </div>
@@ -1275,10 +1313,10 @@
                 <div>
                   <div class="font-semibold mb-1">Instagram</div>
                   <a
-                    href="https://instagram.com/leobringasatlife"
+                    href="https://instagram.com/leobringas.site"
                     target="_blank"
                     class="text-gray-600 hover:text-black hover:underline"
-                    >@leobringasatlife</a
+                    >@leobringas.site</a
                   >
                 </div>
               </div>
@@ -1287,12 +1325,6 @@
 
           <!-- FAQ -->
           <div class="bg-gray-50 rounded p-8">
-            <!-- 
-            
-            Mejorar FAQ según el @index.html 
-
-            -->
-
             <h3 class="font-semibold text-xl mb-6">
               Preguntas frecuentes (FAQ)
             </h3>
@@ -1355,9 +1387,8 @@
     <!-- FOOTER -->
     <footer class="bg-gray-900 text-gray-300 py-12 mt-20">
       <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-12">
-        <!-- Marca -->
         <div>
-          <div class="text-2xl font-bold text-white group cursor-default">
+          <div class="text-2xl font-bold text-white group">
             LeoBringasAtLife
           </div>
           <p class="text-sm text-gray-400">

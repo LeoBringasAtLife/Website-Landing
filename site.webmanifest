@@ -1,0 +1,27 @@
+{
+  "name": "Desarrollo Web Profesional - LeoBringasAtLife",
+  "short_name": "LeoBringas",
+  "description": "Desarrollo web profesional. Landing pages, sitios corporativos y e-commerce con diseño moderno y enfoque en conversión.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#162c4f",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/image/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/assets/image/favicon.ico",
+      "sizes": "192x192",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/assets/image/favicon.ico",
+      "sizes": "512x512",
+      "type": "image/x-icon"
+    }
+  ]
+}
