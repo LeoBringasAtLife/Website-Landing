@@ -22,12 +22,10 @@ menuToggle.addEventListener('click', openMenu);
 menuClose.addEventListener('click', closeMenu);
 menuOverlay.addEventListener('click', closeMenu);
 
-// Cerrar menú al hacer clic en un link
 menuLinks.forEach((link) => {
   link.addEventListener('click', closeMenu);
 });
 
-// Cerrar con tecla Escape
 document.addEventListener('keydown', (e) => {
   if (
     e.key === 'Escape' &&
