@@ -8,11 +8,21 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Menú mobil */
+/* Menú movil */
 #mobileMenu {
   transition: transform 0.3s ease-in-out;
 }
 
 #mobileMenu.hidden {
   transform: translateX(100%);
+}
+
+/* Ocultar scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
