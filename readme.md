@@ -2,12 +2,6 @@
 
 Plataforma de servicios de desarrollo web liderada por **Leonardo Bringas**, enfocada en crear sitios web claros, rápidos y estratégicos, pensados para convertir visitas en consultas y ventas.
 
-<br/>
-
-![Imagen del sitio](assets/image/screenshottt.png)
-
-![Imagen del sitio](assets/image/screenshot.png)
-
 [Visitar sitio web](https://leobringasatlife.site)
 
 ### Planes y Servicios
@@ -22,33 +16,3 @@ Plataforma de servicios de desarrollo web liderada por **Leonardo Bringas**, enf
 
 _> Nota: Los precios corresponden a la oferta actual y pueden variar._
 
-### Estructura del Proyecto
-
-```
-website-landing/
-│
-├── index.html              # Archivo principal
-├── README.md               # Documentación del proyecto
-│
-├── assets/                 # Recursos estáticos
-│   ├── image/              # Imágenes y gráficos
-│   │   └── favicon.ico     # Favicon del sitio
-│   ├── css/                # Hojas de estilo
-│   │   ├── global.css      # Estilos base
-│   │   ├── fonts.css       # Fuentes
-│   └── javascript/         # Scripts JavaScript
-│       └── main.js         # Lógica principal
-```
-
-### Contacto
-
-¿Listo para iniciar tu proyecto?
-
-- **WhatsApp:** [+54 11 2541-7299](https://wa.me/5491125417299)
-- **Email:** [leonardoisaiasbringas34@gmail.com](mailto:leonardoisaiasbringas34@gmail.com)
-- **Instagram:** [@leobringasatlife](https://instagram.com/leobringasatlife)
-- **Sitio Web:** [leobringasatlife.site](https://leobringasatlife.site)
-
----
-
-**¡HAGAMOS REALIDAD TU PRESENCIA ONLINE! 🚀**

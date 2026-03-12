@@ -8,6 +8,11 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: #e5e5e580;
+  color: #000;
+}
+
 /* Menú movil */
 #mobileMenu {
   transition: transform 0.3s ease-in-out;
