@@ -1,37 +1,47 @@
+// Menú móvil
 const menuToggle = document.getElementById('menuToggle');
 const menuClose = document.getElementById('menuClose');
 const mobileMenu = document.getElementById('mobileMenu');
 const menuOverlay = document.getElementById('menuOverlay');
-const menuLinks = mobileMenu.querySelectorAll('a');
 
-function openMenu() {
-  mobileMenu.classList.remove('translate-x-full');
-  menuOverlay.classList.remove('hidden');
-  document.body.style.overflow = 'hidden';
-  menuToggle.setAttribute('aria-expanded', 'true');
-}
+if (menuToggle && menuClose && mobileMenu && menuOverlay) {
+  const menuLinks = mobileMenu.querySelectorAll('a');
 
-function closeMenu() {
-  mobileMenu.classList.add('translate-x-full');
-  menuOverlay.classList.add('hidden');
-  document.body.style.overflow = '';
-  menuToggle.setAttribute('aria-expanded', 'false');
-}
-
-menuToggle.addEventListener('click', openMenu);
-menuClose.addEventListener('click', closeMenu);
-menuOverlay.addEventListener('click', closeMenu);
-
-menuLinks.forEach((link) => {
-  link.addEventListener('click', closeMenu);
-});
-
-document.addEventListener('keydown', (e) => {
-  if (
-    e.key === 'Escape' &&
-    !mobileMenu.classList.contains('translate-x-full')
-  ) {
-    closeMenu();
+  function openMenu() {
+    mobileMenu.classList.remove('translate-x-full');
+    menuOverlay.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    menuToggle.setAttribute('aria-expanded', 'true');
   }
-});
 
+  function closeMenu() {
+    mobileMenu.classList.add('translate-x-full');
+    menuOverlay.classList.add('hidden');
+    document.body.style.overflow = '';
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  menuToggle.addEventListener('click', openMenu);
+  menuClose.addEventListener('click', closeMenu);
+  menuOverlay.addEventListener('click', closeMenu);
+
+  menuLinks.forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !mobileMenu.classList.contains('translate-x-full')) {
+      closeMenu();
+    }
+  });
+}
+
+// FAQ Acordeón
+document.querySelectorAll('.faq-toggle').forEach((button) => {
+  button.addEventListener('click', () => {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector('svg');
+    content.classList.toggle('hidden');
+    icon.classList.toggle('rotate-180');
+  });
+});
