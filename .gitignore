@@ -1,16 +1,11 @@
-# Dependencias
 node_modules/
 npm-debug.log*
 package-lock.json
 
-# Archivos de sistema
 .DS_Store
 Thumbs.db
 
-# Editor
 .vscode/
-.idea/
 
-# Archivos temporales
 *.log
 *.tmp
