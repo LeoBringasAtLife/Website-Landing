@@ -14,7 +14,6 @@ Plataforma de servicios de desarrollo web liderada por **Leonardo Bringas** (Leo
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Secciones del Sitio](#secciones-del-sitio)
 - [Planes de Precios](#planes-de-precios)
-- [Servicios Opcionales](#servicios-opcionales)
 - [Instalación y Desarrollo](#instalación-y-desarrollo)
 - [Despliegue](#despliegue)
 - [Autor](#autor)
@@ -23,28 +22,29 @@ Plataforma de servicios de desarrollo web liderada por **Leonardo Bringas** (Leo
 
 ## Descripción del Proyecto
 
-Landing page estática de un solo archivo (`index.html`) que funciona como **portfolio y herramienta de ventas** para servicios de desarrollo web freelance. El sitio presenta 7 planes de precios claramente definidos con features detalladas, e integra botones de WhatsApp para generar leads directamente.
+Landing page estática de un solo archivo (`index.html`) que funciona como **portfolio y herramienta de ventas** para servicios de desarrollo web freelance. El sitio presenta un selector de planes (Individuos / Empresas) con precios claros, e integra botones de WhatsApp y un formulario de contacto para generar leads directamente.
 
 ### Objetivos
 
-- **Generar leads**: Cada botón CTA envía a WhatsApp con mensaje pre-llenado
-- **SEO completo**: JSON-LD con schema `ProfessionalService`, metas Open Graph, canonical URL
-- **Totalmente responsive**: Diseño mobile-first adaptable a todos los dispositivos
-- **Despliegue automático**: Push a `main` → GitHub Actions → GitHub Pages
-- **PWA**: Web manifest permite "Añadir a pantalla de inicio"
+- **Generar leads**: Cada botón CTA envía a WhatsApp con mensaje pre-llenado y hay un formulario de contacto con validación.
+- **SEO completo**: JSON-LD con schema `ProfessionalService`, meta tags Open Graph / Twitter Card y canonical URL.
+- **Totalmente responsive**: Diseño mobile-first adaptable a todos los dispositivos, con menú hamburguesa.
+- **Despliegue automático**: Push a `main` → GitHub Actions → GitHub Pages.
+- **PWA**: Web manifest permite "Añadir a pantalla de inicio".
 
 ---
 
 ## Características
 
-- 7 planes de precios detallados (desde $90,000 hasta $1,700,000 ARS)
-- Tabla comparativa de features entre planes
-- 7 servicios opcionales adicionales
-- Proceso de trabajo de 8 pasos documentado
+- **Planes con selector de pestañas** (Individuos / Empresas)
+- 3 planes de precio definidos: **Inicial** ($150.000), **Landing Pages** ($270.000, recomendado) y **Ecommerce** ($1.700.000)
+- Tabla comparativa de características entre planes
+- Proceso de trabajo de 4 pasos documentado
 - Botón flotante de WhatsApp para contacto rápido
 - Menú de navegación sticky con hamburger responsive
 - FAQ interactivo con acordeón
-- Métodos de pago: transferencia bancaria y Mercado Pago
+- Formulario de contacto con validación y honeypot anti-spam
+- Métodos de contacto: email, WhatsApp e Instagram
 - Imagen Open Graph para compartir en redes sociales
 - Web manifest para instalación como PWA
 
@@ -56,8 +56,7 @@ Landing page estática de un solo archivo (`index.html`) que funciona como **por
 |------|-----------|---------|
 | Lenguaje | HTML, CSS, JavaScript | Vanilla |
 | CSS Framework | Tailwind CSS | v3.4.19 |
-| Fuentes | Google Fonts: Inter | 400, 500, 600, 700 |
-| Despliegue | GitHub Pages | via GitHub Actions |
+| Despliegue | GitHub Pages | vía GitHub Actions |
 | PWA | Web Manifest | Manifest V2 |
 
 ---
@@ -71,69 +70,53 @@ Website-Landing/
 │       └── static.yml            # Workflow de despliegue a GitHub Pages
 ├── assets/
 │   ├── css/
-│   │   ├── global.css            # CSS fuente con clases Tailwind custom (168 líneas)
+│   │   ├── global.css            # CSS fuente con clases Tailwind custom
 │   │   └── tailwind.min.css      # CSS compilado y minificado (generado automáticamente)
 │   ├── image/
 │   │   ├── og-image.png          # Imagen para compartir en redes sociales
-│   │   ├── leo.webp              # Foto de perfil de Leonardo Bringas
-│   │   ├── leo.ico               # Favicon del sitio
-│   │   └── images.png            # Asset de imagen adicional
+│   │   ├── yo.webp               # Foto de perfil de Leonardo Bringas
+│   │   ├── images.png            # Asset de imagen adicional
+│   │   └── leo.ico               # Favicon del sitio (referenciado)
 │   └── javascript/
-│       └── main.js               # Lógica del menú móvil responsive (37 líneas)
-├── index.html                    # Aplicación completa (1,359 líneas)
+│       └── main.js               # Lógica del menú móvil responsive
+├── index.html                    # Aplicación completa
 ├── package.json                  # Configuración de proyecto y scripts npm
 ├── tailwind.config.js            # Configuración mínima de Tailwind CSS
 ├── site.webmanifest              # Manifest PWA para instalación
-└── readme.md                     # Este archivo
+├── robots.txt                    # Reglas para crawlers
+├── sitemap.XML                   # Sitemap para SEO
+└── README.md                     # Este archivo
 ```
 
 ---
 
 ## Secciones del Sitio
 
-| Sección | Líneas | Descripción |
-|---------|--------|-------------|
-| `<head>` | 1-215 | Meta tags SEO, Open Graph, Twitter Card, JSON-LD estructurado, favicon, estilos |
-| Botón WhatsApp | 219-237 | Botón flotante fijo en esquina inferior derecha |
-| Header / Nav | 240-341 | Navegación sticky con menú hamburguesa responsive (slide-in) |
-| Hero | 345-367 | Título principal: "Impulsa tu presencia digital..." con botones CTA |
-| Beneficios | 370-387 | 3 estadísticas clave: 15-30 días, pago 50/50, 100% responsive/SEO |
-| Planes | 390-636 | 7 niveles de servicio con features detalladas y botones WhatsApp |
-| Tabla Comparativa | 639-826 | Comparación lado a lado de todos los planes (scroll horizontal en móvil) |
-| Servicios Opcionales | 829-888 | 7 servicios adicionales: mantenimiento, SEO, urgencia, carga, branding, hosting, rediseño |
-| Proceso de Trabajo | 891-977 | 8 pasos desde contacto inicial hasta soporte post-lanzamiento |
-| Sobre Mí | 980-1003 | Foto de perfil + biografía |
-| Métodos de Pago | 1006-1046 | Condiciones 50/50, transferencia bancaria y Mercado Pago |
-| CTA Banner | 1049-1061 | Banner oscuro invitando a iniciar un proyecto |
-| Contacto + FAQ | 1064-1288 | Información de email + 6 preguntas frecuentes con acordeón |
-| Footer | 1292-1339 | Footer de 4 columnas con navegación, contacto y ubicación |
-| Scripts | 1341-1355 | Carga de `main.js` + script inline del acordeón FAQ |
+| Sección | Descripción |
+|---------|-------------|
+| `<head>` | Meta SEO, Open Graph, Twitter Card, JSON-LD estructurado, favicon, estilos |
+| Botón WhatsApp | Botón flotante fijo en la esquina inferior derecha |
+| Header / Nav | Navegación sticky con menú hamburguesa responsive (slide-in) |
+| Hero | Título principal: "Diseño y desarrollo web para empresas y emprendedores" con botón CTA |
+| Beneficios | 3 estadísticas clave: desde 10 días, pago 50/50, 100% responsive/SEO |
+| Planes | Selector Individuos/Empresas con página de precios y features |
+| Tabla Comparativa | Comparación lado a lado de los planes |
+| Proceso | 4 pasos desde consulta gratuita hasta lanzamiento y soporte |
+| Sobre mí | Biografía, estadísticas (7+ proyectos, 100% recomiendan) |
+| Contacto + FAQ | Vías de contacto (email, WhatsApp, Instagram), formulario y preguntas frecuentes |
+| Footer | Footer de 4 columnas con navegación, contacto e información |
 
 ---
 
 ## Planes de Precios
 
-| Plan | Precio (ARS) | Descripción |
-|------|-------------|-------------|
-| Landing Page Básica | $90,000 | Página única profesional para emprendedores |
-| Landing Page Plus | $160,000 | Landing page con secciones adicionales |
-| Sitio Web Corporativo | $350,000 | Sitio multipágina para empresas |
-| E-commerce Básico | $600,000 | Tienda online con hasta 20 productos |
-| E-commerce Completo | $950,000 | Tienda online con funcionalidades avanzadas |
-| E-commerce Premium | $1,350,000 | Tienda online con todas las funcionalidades |
-| Plan Personalizado | $1,700,000 | Desarrollo a medida según requerimientos |
+> Los planes se presentan por defecto en la pestaña "Individuos". La pestaña "Empresas" está preparada como placeholder para planes futuros.
 
----
-
-## Servicios Opcionales
-
-- **Mantenimiento mensual**: Actualizaciones y soporte continuo
-- **Posicionamiento SEO**: Optimización para motores de búsqueda
-- **Entrega en 72 horas**: Desarrollo con fecha límite ajustada
-- **Carga de productos**: Subida de catálogo a la tienda online
-- **Diseño de branding**: Creación de identidad visual
-- **Hosting profesional**: Alojamiento del sitio web
-- **Rediseño web**: Actualización de sitio existente
+| Plan | Precio (ARS) | Entrega | Destacado |
+|------|-------------|---------|-----------|
+| Inicial | $150.000 | 5-7 días / 10 días | — |
+| Landing Pages | $270.000 | 15-20 días | ⭐ Recomendado |
+| Ecommerce | $1.700.000 | 45-60 días | Tienda online (hasta +200 productos) |
 
 ---
 
@@ -190,6 +173,8 @@ python -m http.server 8000
 npx http-server
 ```
 
+> **Nota:** `server.js` sirve como servidor de desarrollo local con LiveReload, pero actualmente está configurado con `index: 'index2.html'`, un archivo que no existe en el proyecto. Ajusta esa línea a `index.html` si quieres usarlo.
+
 ---
 
 ## Despliegue
@@ -216,6 +201,7 @@ El sitio se despliega **automáticamente** a GitHub Pages mediante GitHub Action
 - Sitio web: [https://leobringasatlife.site](https://leobringasatlife.site)
 - Ubicación: Buenos Aires, Argentina
 - GitHub: [LeoBringasAtLife](https://github.com/LeoBringasAtLife)
+- Instagram: [@leobringasatlife](https://instagram.com/leobringasatlife)
 
 ---
 
