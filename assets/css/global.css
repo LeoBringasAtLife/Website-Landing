@@ -1,4 +1,8 @@
-@tailwind base;
+::selection,
+::-moz-selection {
+  background: #141415;
+  color: #ffffff;
+}@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -18,6 +22,12 @@
       scroll-behavior: auto;
     }
   }
+}
+
+::selection,
+::-moz-selection {
+  background: #141415;
+  color: #ffffff;
 }
 
 /* Clases toggled via JavaScript (no detectables por Tailwind JIT) */
